@@ -268,7 +268,7 @@ def parse_register_file(path: str):
 # Predefined macros: name -> list of (addr, value, comment)
 MACROS = {
     "hp_i2s_init": [
-        (0x0F, 0x000, "Reset"),
+        (0xFH, 0x000, "Reset"),
         (0x19, 0x0C0, "Power1: VREF up + VMID=50k"),
         (0x1A, 0x1E0, "Power2: DACL/DACR + LOUT1/ROUT1 on"),
         (0x2F, 0x00C, "Power3: enable L/R output mixers"),
